@@ -36,15 +36,41 @@
                                     <action selector="captureVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EUe-uT-zFX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbZ-TF-0gJ">
+                                <rect key="frame" x="240" y="504" width="120" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="XAB-6P-ONe"/>
+                                    <constraint firstAttribute="height" constant="40" id="iek-rg-vCd"/>
+                                </constraints>
+                                <state key="normal" title="Play Recorded">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playbackButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0M8-yK-uTQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.7843137255" green="0.89019607840000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="zbZ-TF-0gJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="7L3-7t-5xV"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="neA-fT-FSC" secondAttribute="bottom" constant="8" symbolic="YES" id="efE-E9-Vdc"/>
+                            <constraint firstItem="neA-fT-FSC" firstAttribute="top" secondItem="zbZ-TF-0gJ" secondAttribute="bottom" constant="8" symbolic="YES" id="fDR-KS-1Gt"/>
+                            <constraint firstAttribute="centerX" secondItem="zbZ-TF-0gJ" secondAttribute="centerX" id="nlI-Nb-sFS"/>
+                            <constraint firstAttribute="centerX" secondItem="zbZ-TF-0gJ" secondAttribute="centerX" id="o6d-Hb-Skr"/>
                             <constraint firstAttribute="centerX" secondItem="neA-fT-FSC" secondAttribute="centerX" id="p1O-Jc-qMO"/>
                             <constraint firstAttribute="centerY" secondItem="neA-fT-FSC" secondAttribute="centerY" constant="-272" id="syd-TY-JTx"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="7L3-7t-5xV"/>
+                                <exclude reference="o6d-Hb-Skr"/>
                                 <exclude reference="syd-TY-JTx"/>
                             </mask>
                         </variation>
