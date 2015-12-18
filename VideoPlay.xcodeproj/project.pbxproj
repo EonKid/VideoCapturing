@@ -14,6 +14,7 @@
 		A6A7C2A31C2406AE00722AF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A7C2A21C2406AE00722AF7 /* Images.xcassets */; };
 		A6A7C2A61C2406AE00722AF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A7C2A41C2406AE00722AF7 /* LaunchScreen.xib */; };
 		A6A7C2B21C2406AE00722AF7 /* VideoPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A7C2B11C2406AE00722AF7 /* VideoPlayTests.m */; };
+		A6A7C2BC1C2407CE00722AF7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A7C2BB1C2407CE00722AF7 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A6A7C2AB1C2406AE00722AF7 /* VideoPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A7C2B01C2406AE00722AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A7C2B11C2406AE00722AF7 /* VideoPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayTests.m; sourceTree = "<group>"; };
+		A6A7C2BB1C2407CE00722AF7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A7C2BC1C2407CE00722AF7 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		A6A7C2891C2406AE00722AF7 = {
 			isa = PBXGroup;
 			children = (
+				A6A7C2BB1C2407CE00722AF7 /* MediaPlayer.framework */,
 				A6A7C2941C2406AE00722AF7 /* VideoPlay */,
 				A6A7C2AE1C2406AE00722AF7 /* VideoPlayTests */,
 				A6A7C2931C2406AE00722AF7 /* Products */,
